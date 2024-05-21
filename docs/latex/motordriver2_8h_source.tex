@@ -1,0 +1,38 @@
+\doxysection{motordriver2.\+h}
+\hypertarget{motordriver2_8h_source}{}\label{motordriver2_8h_source}\index{D:/2024 Spring Cal Poly/507/motordriver/Core/Src/motordriver2.h@{D:/2024 Spring Cal Poly/507/motordriver/Core/Src/motordriver2.h}}
+\mbox{\hyperlink{motordriver2_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00002}00002\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00003}00003\ \textcolor{comment}{\ *\ motordriver.h}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00004}00004\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00005}00005\ \textcolor{comment}{\ *\ \ Created\ on:\ Apr\ 22,\ 2024}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00006}00006\ \textcolor{comment}{\ *\ \ \ \ \ \ Author:\ sydney\ ulvick}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00007}00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00008}00008\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00011}00011\ \textcolor{preprocessor}{\#ifndef\ MOTORDRIVER\_H\_}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00012}00012\ \textcolor{preprocessor}{\#define\ MOTORDRIVER\_H\_}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00015}00015\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00016}00016\ \textcolor{preprocessor}{\#include\ "{}stm32l4xx\_hal.h"{}}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00019}\mbox{\hyperlink{structmotor__t}{00019}}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00021}\mbox{\hyperlink{structmotor__t_a1e2e5c3d8ab331f7cbd089a01aae1c27}{00021}}\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structmotor__t_a1e2e5c3d8ab331f7cbd089a01aae1c27}{fwd\_channel}};}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00023}\mbox{\hyperlink{structmotor__t_a22eb0850ae480dafe18020e7f911ea25}{00023}}\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structmotor__t_a22eb0850ae480dafe18020e7f911ea25}{bwd\_channel}};}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00025}\mbox{\hyperlink{structmotor__t_a5dc7d1c65997ccaed48a93a3f4ffc486}{00025}}\ \ \ \ \ TIM\_HandleTypeDef*\mbox{\hyperlink{structmotor__t_a5dc7d1c65997ccaed48a93a3f4ffc486}{htim}};}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00027}\mbox{\hyperlink{structmotor__t_a0d90a9fe74bca2dccde7f81cddfdf7b0}{00027}}\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structmotor__t_a0d90a9fe74bca2dccde7f81cddfdf7b0}{high}};}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00028}00028\ \}\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{structmotor__t}{motor\_t}};}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00030}00030\ \textcolor{comment}{//prototype\ for\ motor\ object}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00031}00031\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{motordriver2_8h_a9bcac7802934610dfe6f68936344c27b}{set\_duty}}(\mbox{\hyperlink{structmotor__t}{motor\_t}}*p\_mot,int16\_t\ duty);\ \textcolor{comment}{//where\ p\_mot\ is\ a\ pointer\ for\ the\ struct\ we\ made\ :)}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00032}00032\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{motordriver2_8h_aa5acbcb6ee1b01ec9e6f657c2332fb3c}{motor\_enable\_channel}}(\mbox{\hyperlink{structmotor__t}{motor\_t}}*p\_mot);}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00033}00033\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{motordriver2_8h_afc59dce0683276b817239ddf70485348}{motor\_disable\_channel}}(\mbox{\hyperlink{structmotor__t}{motor\_t}}*p\_mot);}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00037}00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ MOTORDRIVER\_H\_\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{motordriver2_8h_source_l00038}00038\ }
+
+\end{DoxyCode}

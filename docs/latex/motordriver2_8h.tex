@@ -1,0 +1,64 @@
+\doxysection{D\+:/2024 Spring Cal Poly/507/motordriver/\+Core/\+Src/motordriver2.h File Reference}
+\hypertarget{motordriver2_8h}{}\label{motordriver2_8h}\index{D:/2024 Spring Cal Poly/507/motordriver/Core/Src/motordriver2.h@{D:/2024 Spring Cal Poly/507/motordriver/Core/Src/motordriver2.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include "{}stm32l4xx\+\_\+hal.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmotor__t}{motor\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{motordriver2_8h_a9bcac7802934610dfe6f68936344c27b}{set\+\_\+duty}} (\mbox{\hyperlink{structmotor__t}{motor\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+\_\+mot, int16\+\_\+t duty)
+\begin{DoxyCompactList}\small\item\em sets the duty cycle given a parameter duty, which is the pulse width \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{motordriver2_8h_aa5acbcb6ee1b01ec9e6f657c2332fb3c}{motor\+\_\+enable\+\_\+channel}} (\mbox{\hyperlink{structmotor__t}{motor\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+\_\+mot)
+\begin{DoxyCompactList}\small\item\em enables both motor channels for PWM \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{motordriver2_8h_afc59dce0683276b817239ddf70485348}{motor\+\_\+disable\+\_\+channel}} (\mbox{\hyperlink{structmotor__t}{motor\+\_\+t}} \texorpdfstring{$\ast$}{*}p\+\_\+mot)
+\begin{DoxyCompactList}\small\item\em disables both motor channels for PWM \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{motordriver2_8h_afc59dce0683276b817239ddf70485348}\label{motordriver2_8h_afc59dce0683276b817239ddf70485348} 
+\index{motordriver2.h@{motordriver2.h}!motor\_disable\_channel@{motor\_disable\_channel}}
+\index{motor\_disable\_channel@{motor\_disable\_channel}!motordriver2.h@{motordriver2.h}}
+\doxysubsubsection{\texorpdfstring{motor\_disable\_channel()}{motor\_disable\_channel()}}
+{\footnotesize\ttfamily void motor\+\_\+disable\+\_\+channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmotor__t}{motor\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+mot }\end{DoxyParamCaption})}
+
+
+
+disables both motor channels for PWM 
+
+
+
+Definition at line \mbox{\hyperlink{motordriver2_8c_source_l00041}{41}} of file \mbox{\hyperlink{motordriver2_8c_source}{motordriver2.\+c}}.
+
+\Hypertarget{motordriver2_8h_aa5acbcb6ee1b01ec9e6f657c2332fb3c}\label{motordriver2_8h_aa5acbcb6ee1b01ec9e6f657c2332fb3c} 
+\index{motordriver2.h@{motordriver2.h}!motor\_enable\_channel@{motor\_enable\_channel}}
+\index{motor\_enable\_channel@{motor\_enable\_channel}!motordriver2.h@{motordriver2.h}}
+\doxysubsubsection{\texorpdfstring{motor\_enable\_channel()}{motor\_enable\_channel()}}
+{\footnotesize\ttfamily void motor\+\_\+enable\+\_\+channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmotor__t}{motor\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+mot }\end{DoxyParamCaption})}
+
+
+
+enables both motor channels for PWM 
+
+
+
+Definition at line \mbox{\hyperlink{motordriver2_8c_source_l00032}{32}} of file \mbox{\hyperlink{motordriver2_8c_source}{motordriver2.\+c}}.
+
+\Hypertarget{motordriver2_8h_a9bcac7802934610dfe6f68936344c27b}\label{motordriver2_8h_a9bcac7802934610dfe6f68936344c27b} 
+\index{motordriver2.h@{motordriver2.h}!set\_duty@{set\_duty}}
+\index{set\_duty@{set\_duty}!motordriver2.h@{motordriver2.h}}
+\doxysubsubsection{\texorpdfstring{set\_duty()}{set\_duty()}}
+{\footnotesize\ttfamily void set\+\_\+duty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmotor__t}{motor\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+mot,  }\item[{int16\+\_\+t}]{duty }\end{DoxyParamCaption})}
+
+
+
+sets the duty cycle given a parameter duty, which is the pulse width 
+
+
+
+Definition at line \mbox{\hyperlink{motordriver2_8c_source_l00015}{15}} of file \mbox{\hyperlink{motordriver2_8c_source}{motordriver2.\+c}}.
+
